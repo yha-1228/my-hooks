@@ -1,3 +1,4 @@
+import './styles/normalize.css'
 import './App.css'
 import { useCounter } from './hooks'
 
