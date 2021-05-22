@@ -14,7 +14,7 @@ function DemoUseCounter() {
   )
 }
 
-export function DemoUseScroll() {
+function DemoUseScroll() {
   const { ref, scroll } = useScroll<HTMLUListElement>()
 
   return (
