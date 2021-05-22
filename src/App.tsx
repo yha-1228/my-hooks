@@ -2,13 +2,14 @@ import './App.css'
 import { useCounter } from './hooks'
 
 function DemoUseCounter() {
-  const { count, increment, decrement } = useCounter(0)
+  const { count, increment, decrement, reset } = useCounter(0)
 
   return (
     <div>
       <div>{count}</div>
       <button onClick={() => increment()}>increment</button>
       <button onClick={() => decrement()}>decrement</button>
+      <button onClick={() => reset()}>reset</button>
     </div>
   )
 }
