@@ -1,5 +1,5 @@
 import './styles/global.css'
-import { useCounter, useScroll } from './hooks'
+import { useCounter, useScroll, useToggle } from './hooks'
 
 function DemoUseCounter() {
   const { count, increment, decrement, reset } = useCounter(0)
@@ -34,6 +34,12 @@ function DemoUseScroll() {
   )
 }
 
+function DemoUseToggle() {
+  const [isOn, toggle] = useToggle(false)
+
+  return <button onClick={toggle}>{JSON.stringify(isOn)}</button>
+}
+
 function App() {
   return (
     <div>
@@ -47,6 +53,11 @@ function App() {
       <section>
         <h2>useScroll</h2>
         <DemoUseScroll />
+      </section>
+
+      <section>
+        <h2>useToggle</h2>
+        <DemoUseToggle />
       </section>
     </div>
   )
