@@ -7,6 +7,7 @@ function useCounter(initialCount: number) {
     count,
     increment: () => setCount((count) => count + 1),
     decrement: () => setCount((count) => count - 1),
+    reset: () => setCount(initialCount),
   }
 }
 
