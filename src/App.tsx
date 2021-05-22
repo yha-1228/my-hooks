@@ -1,5 +1,5 @@
 import './styles/normalize.css'
-import './styles/App.css'
+import './styles/base.css'
 import { useCounter } from './hooks'
 
 function DemoUseCounter() {
